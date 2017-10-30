@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Therapy Pet Pals of Texas</title>
+	<link href="css/styles2.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="fancybox-master/dist/jquery.fancybox.css" type="text/css" media="screen" />
+</head>
+
+
+<body>
+
+
+		<nav id="menu">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="donate.html"><i class="fa fa-heart-o" aria-hidden="true"></i> Donate</a></li>
+        <li><a href="index.html#volunteertag"><i class="fa fa-paw" aria-hidden="true"></i> Volunteer</a></li>
+        <li><a href="about.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> About</a></li>
+        <li><a href="index.html#contacttag"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+        <li><a href="media.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Media</a></li>
+        <li><a href="benefits.html"><i class="fa fa-smile-o" aria-hidden="true"></i> Benefits</a></li>
+        <li><a href="https://goo.gl/forms/8YPf8XguNYFhuUiE3" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> Visitation Log</a><small class="currently">
+        	<br>
+        *Current Volunteers Only</small></li>
+    </ul>
+    </nav>
+
+
+<div id="wrappa">
+		<!--  		MENU PORTION 		 -->
+
+	<div id="menubar">
+
+
+        <div class="menu">
+
+					<div class="menuphone">
+
+						<button class="toggle-button" onclick="toggleNav()">☰</button>
+
+						<a href="index.html"><h2>Therapy Pet Pals of Texas, Inc.</h2></a>
+
+					</div>
+
+
+            <div class="menu2">
+                <ul>
+                <li><a href="donate.html"><div class="topdonatebutton">Donate</div></a></li>
+                <li><a href="index.html#contacttag">Contact</a></li>
+
+                <li><a href="index.html#volunteertag">Volunteer</a></li>
+                <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="menu1">
+                <ul>
+                <li><a href="index.html"><img src="photos/topnav.svg">Therapy Pet Pals of Texas, Inc.</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+<div id="header">
+    <div class="headercontainer3">
+        <div class="headertextarea3">
+            Media
+        </div></div>
+</div>
+
+
+
+<div id="content" class="mediacontent">
+
+
+ <a href="gallery/Ben_at_Brighton_Gardens.jpg" data-fancybox="images">
+ 	<img src="gallery/Ben_at_Brighton_Gardens.jpg" />
+  </a>
+
+ <a href="gallery/Coco.jpg" data-fancybox="images">
+ 	<img src="gallery/Coco.jpg" />
+  </a>
+
+   <a href="gallery/GraceHouseVolunteers.jpg" data-fancybox="images">
+ 	<img src="gallery/GraceHouseVolunteers.jpg" />
+  </a>
+
+   <a href="gallery/Heartland2.jpg" data-fancybox="images">
+ 	<img src="gallery/Heartland2.jpg" />
+  </a>
+
+   <a href="gallery/Heartland3.jpg" data-fancybox="images">
+ 	<img src="gallery/Heartland3.jpg" />
+  </a>
+
+   <a href="gallery/Heartland.jpg" data-fancybox="images">
+ 	<img src="gallery/Heartland.jpg" />
+  </a>
+
+   <a href="gallery/Junebug.jpg" data-fancybox="images">
+ 	<img src="gallery/Junebug.jpg" />
+  </a>
+
+   <a href="gallery/OfficePups.jpg" data-fancybox="images">
+ 	<img src="gallery/OfficePups.jpg" />
+  </a>
+
+   <a href="gallery/Patsy.jpg" data-fancybox="images">
+ 	<img src="gallery/Patsy.jpg" />
+  </a>
+
+   <a href="gallery/Reggie.jpg" data-fancybox="images">
+ 	<img src="gallery/Reggie.jpg" />
+  </a>
+
+   <a href="gallery/TippyDodge.jpg" data-fancybox="images">
+ 	<img src="gallery/TippyDodge.jpg" />
+  </a>
+
+
+    </div>
+
+
+<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="fancybox-master/dist/jquery.fancybox.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$(".fancybox").fancybox();
+});
+</script>
+<script>
+
+
+function toggleNav() {
+    console.log(document.getElementById("menu").style.width);
+    if(document.getElementById("menu").style.width == "0px") {
+        console.log("ayy");
+        document.getElementById("menu").style.width = "250px";
+        document.getElementById("wrappa").style.marginLeft = "250px";
+    } else {
+        document.getElementById("menu").style.width = "0px";
+        document.getElementById("wrappa").style.marginLeft= "0px";
+    } 
+
+}
+
+</script>
+
+
+    </body>
+
+		<footer>
+			<div class="footerwrap"><ul>
+				<li>
+					<b>Main Navigation</b>
+					<br><a href="index.html">Home</a>
+					<br><a href="about.html">About Us</a>
+					<br><a href="pdfs/PetPalsSpring2017.pdf">Newsletter</a>
+					<br><a href="benefits.html">Benefits</a>
+					<br><a href="media.html">Media</a>
+					<br><a href="donate.html">Donate</a>
+			</li>
+
+				<li>
+					<b>Volunteer
+					<br>Opportunities</b>
+					<br><a href="austin.html">Austin location</a>
+					<br><a href="houston.html">Houston location</a>
+					<br><br>
+					<b>Current Volunteers</b>
+					<br><a href="https://goo.gl/forms/8YPf8XguNYFhuUiE3" target="_blank">Hours Log Form</a>
+				</li>
+
+		<li><b>Contact Us</b><p>(512) 347-1984
+		<br>
+		3930 Bee Cave Rd Suite C <br>
+		Austin, TX 78746
+		</p>
+		<big><a href="mailto:tppt_admin@therapypetpals.org"><i class="fa fa-envelope-o"></i></a>
+		<a href="https://www.facebook.com/Therapy-Pet-Pals-of-Texas-757681967583211/" target="_blank"><i class="fa fa-facebook"></i></a></big>
+		</li>
+
+				<li><img src="photos/white.png"/></li>
+			</ul>
+
+			<br>
+			<div class="credit">
+			<img src="photos/white.png"/>
+			Website made with <i class="fa fa-heart-o"></i> by Jasmine Oh. Last Updated November 2017.
+		</div>
+		</div>
+		</footer>
+
+		</div>
+
+
+
+
+</html>

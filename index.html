@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Therapy Pet Pals of Texas</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+
+
+
+	<div id="hometag"></div>
+
+	<!-- SMOOTH SCROLLING -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+			// Add smooth scrolling to all links
+			$("a").on('click', function(event) {
+
+				// Make sure this.hash has a value before overriding default behavior
+				if (this.hash !== "") {
+					// Prevent default anchor click behavior
+					event.preventDefault();
+
+					// Store hash
+					var hash = this.hash;
+
+					// Using jQuery's animate() method to add smooth page scroll
+					// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+					$('html, body').animate({
+						scrollTop: $(hash).offset().top
+					}, 900, function() {
+
+						// Add hash (#) to URL when done scrolling (default click behavior)
+						window.location.hash = hash;
+					});
+				} // End if
+			});
+		});
+</script>
+
+
+
+</head>
+
+
+<body>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+        <li><a href="donate.html"><i class="fa fa-heart-o" aria-hidden="true"></i> Donate</a></li>
+        <li><a href="index.html#volunteertag"><i class="fa fa-paw" aria-hidden="true"></i> Volunteer</a></li>
+        <li><a href="about.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> About</a></li>
+        <li><a href="index.html#contacttag"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+        <li><a href="media.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Media</a></li>
+        <li><a href="benefits.html"><i class="fa fa-smile-o" aria-hidden="true"></i> Benefits</a></li>
+        <li><a href="https://goo.gl/forms/8YPf8XguNYFhuUiE3" target="_blank"><i class="fa fa-users" aria-hidden="true"></i> Visitation Log</a><small class="currently">
+        	<br>
+        *Current Volunteers Only</small></li>
+    </ul>
+    </nav>
+
+
+
+<div id="wrappa">
+		<!--  		MENU PORTION 		 -->
+
+		<div id="menubar">
+
+			<div class="menu">
+
+				<div class="menuphone">
+
+					<button class="toggle-button" onclick="toggleNav()">☰</button>
+
+					<a href="#hometag"><h2>Therapy Pet Pals of Texas, Inc.</h2></a>
+
+
+				</div>
+
+
+				<div class="menu2">
+					<ul>
+						<li><a href="donate.html">Donate</a></li>
+						<li><a href="#contacttag">Contact</a></li>
+						<li><a href="#volunteertag">Volunteer</a></li>
+						<li><a href="about.html">About</a></li>
+					</ul>
+				</div>
+
+				<div class="menu1">
+					<ul>
+						<li><a href="#hometag"><img src="photos/topnav.svg">Therapy Pet Pals of Texas, Inc.</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+
+	<!--  		HEADER PORTION 		 -->
+	<div id="hometag"></div>
+	<div id="headerpic">
+		<div class="headercontainer">
+			<div class="headertextarea">
+
+					<div class="text">Therapy Pet Pals of Texas enhances the lives of the elderly and ill through pet therapy.</div>
+
+
+				<a href="donate.html" class="donatetoday-button">
+
+						Donate Today
+
+				</a>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<!--  	     VOLUNTEER PORTION 		 -->
+		<div id="volunteertag"></div>
+
+	<div class="slanted">
+		<div id="volunteer">
+			<h2>Interested in Volunteering?</h2>
+			<div class="spaced"><br/></div>
+			<div class="dropdown">
+				<button class="dropbtn">Pick a location <img src="photos/arrow.png"></button>
+				<div class="dropdown-content">
+					<a href="austin.html">Austin</a>
+					<a href="houston.html">Houston / Woodlands</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+<div class="extrasections">
+<ul>
+	<a href="pdfs/PetPalsSpring2017.pdf" target="_blank" class="extrahover"><li>
+		<h2>Pet Pal Tales</h2>
+		<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+		<br>
+		A newsletter for the volunteers, sponsors and
+friends of Therapy Pet Pals of Texas, Inc.
+	</li></a>
+	<a href="benefits.html" class="extrahover"><li>
+		<h2>Pet Therapy Benefits</h2>
+		<i class="fa fa-paw" aria-hidden="true"></i>
+		<bR>
+		There are many types of therapeautic benefits from human animal interactions.
+	</li></a>
+
+		<a href="media.html" class="extrahover"><li><h2>Pictures &amp; Videos</h2>
+		<i class="fa fa-video-camera" aria-hidden="true"></i>
+		<br>
+		Want to see the pet pals in action? Click here for pictures and videos taken by our volunteers!
+	</li></a>
+</div>
+
+
+
+
+
+	<!--  	     CONTACT SECTION 		     -->
+
+
+	<div id="contact">
+		<a href="https://goo.gl/maps/BjTs74JeCyR2" target="_blank">
+			<div class="contact1"></div>
+		</a>
+		<div class="contact2">
+			<div id="contacttag"></div>
+			<h1>CONTACT US</h1>
+			<br>
+			<h6>ADDRESS:</h6>
+			<p>3930 Bee Cave Road, Suite C
+				<br> Austin, TX 78746</p>
+			<br>
+			<h6>PHONE NUMBER:</h6>
+			<p>(512) 347-1984</p>
+			<br>
+			<h6>EMAIL ADDRESS:</h6>
+			<p>tppt_admin@therapypetpals.org</p>
+			<br>
+			<h6>VOLUNTEER HOURS AND DAYS:</h6>
+			<p>9:30 am to 3:30 pm | Mon - Fri
+				<br> (closed Tuesdays &amp; weekends)</p>
+			<img class="contactjpg" src="photos/contact.jpg">
+
+
+		</div>
+	</div>
+	<div id="contacttag"></div>
+
+
+
+
+
+<script>
+function toggleNav() {
+	console.log(document.getElementById("menu").style.width);
+	if(document.getElementById("menu").style.width == "0px") {
+		console.log("ayy");
+    	document.getElementById("menu").style.width = "250px";
+    	document.getElementById("wrappa").style.marginLeft = "250px";
+	} else {
+		document.getElementById("menu").style.width = "0px";
+    	document.getElementById("wrappa").style.marginLeft= "0px";
+	} 
+
+}
+    </script>
+
+
+
+
+
+
+</body>
+
+
+<footer>
+			<div class="footerwrap"><ul>
+				<li>
+					<b>Main Navigation</b>
+					<br><a href="index.html">Home</a>
+					<br><a href="about.html">About Us</a>
+					<br><a href="pdfs/PetPalsSpring2017.pdf">Newsletter</a>
+					<br><a href="benefits.html">Benefits</a>
+					<br><a href="media.html">Media</a>
+					<br><a href="donate.html">Donate</a>
+			</li>
+
+				<li>
+					<b>Volunteer
+					<br>Opportunities</b>
+					<br><a href="austin.html">Austin location</a>
+					<br><a href="houston.html">Houston location</a>
+					<br><br>
+					<b>Current Volunteers</b>
+					<br><a href="https://goo.gl/forms/8YPf8XguNYFhuUiE3" target="_blank">Hours Log Form</a>
+				</li>
+
+		<li><b>Contact Us</b><p>(512) 347-1984
+		<br>
+		3930 Bee Cave Rd Suite C <br>
+		Austin, TX 78746
+		</p>
+		<big><a href="mailto:tppt_admin@therapypetpals.org"><i class="fa fa-envelope-o"></i></a>
+		<a href="https://www.facebook.com/Therapy-Pet-Pals-of-Texas-757681967583211/" target="_blank"><i class="fa fa-facebook"></i></a></big>
+		</li>
+
+				<li><img src="photos/white.png"/></li>
+			</ul>
+
+			<br>
+			<div class="credit">
+			<img src="photos/white.png"/>
+			Website made with <i class="fa fa-heart-o"></i> by Jasmine Oh. Last Updated November 2017.
+		</div>
+		</div>
+		</footer>
+
+		</div>
+
+
+
+
+</html>
+
