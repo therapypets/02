@@ -1,0 +1,810 @@
+/*
+Used in:
+about.html
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+body {
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  font-family: Avenir-book, 'Open Sans', sans-serif;
+  list-style-type: none;
+  height:100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #383838;
+}
+
+a:visited {
+  color: #383838;
+}
+
+a:hover {
+  color: #383838;
+}
+
+a:active {
+  color: #383838;
+}
+
+
+
+
+#menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 5;
+    background-color:white;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+
+button.toggle-button {
+    color: black;
+    font-size: 33px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 9px;
+    left: 10px;
+    outline: none !important;
+}
+
+ main#panel {
+  display:none;
+  z-index:1000000;
+}
+
+.menuphone a h2 {
+    position: absolute;
+    bottom: 20px;
+    left: 74px;
+}
+
+nav#menu ul {
+  margin: 30px 0px 0px 40px;
+  font-size: 18px;
+}
+
+nav#menu ul li {
+    list-style-type:none;
+    padding-bottom: 31px;
+}
+
+nav#menu i.fa {
+    margin-right: 13px;
+}
+small.currently {
+  position: relative;
+  left: 37px;
+  font-size: 12px;
+  bottom: 7px;
+}
+
+
+
+
+
+
+/* ------- NAV BAR -------- */
+
+#menubar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
+  background: #FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Avenir-Heavy, 'Open Sans', sans-serif;
+  font-size: 17px;
+  color: #383838;
+}
+
+.menu {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.menu2 ul li {
+  padding: 0px 0px 0px 30px;
+  display: inline-block;
+  font-family: Avenir-book, 'Open Sans', sans-serif;
+  font-size: 15px;
+  float: right;
+  color: #383838;
+}
+
+.menu2 {
+  position: relative;
+  right: 30px;
+}
+
+.menu1 ul li {
+  float: left;
+  padding: 0px;
+  display: inline-block;
+  position: relative;
+  bottom: 10px;
+  font-size: 18px;
+  color: #383838;
+}
+
+.menu1 img {
+  height: 25px;
+  padding-right: 8px;
+  position: relative;
+  top: 5px;
+  padding-left: 0px;
+}
+
+.topdonatebutton {
+  background: #F7817A;
+  border-radius: 100px;
+  font-family: Avenir-book, 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #FFFFFF;
+  padding: 6px 12px 6px 12px;
+  position: relative;
+  bottom: 7px;
+  right: 3px;
+}
+
+ul.container {
+  display:none;
+}
+.menuphone {
+  display:none;
+}
+
+label.navtrigger {
+  border:none;
+}
+
+
+/* ------- HEADER -------- */
+
+#header {
+  width: 100%;
+  height: 240px;
+  background: #DAE2F8;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.headercontainer {
+  width: 910px;
+  margin: 0 auto;
+  position: relative;
+  top: 180px;
+}
+
+.headertextarea {
+  width: 520px;
+  font-family: avenir-heavy, 'Open Sans', sans-serif;
+  font-size: 30px;
+  color: white;
+  position: relative;
+}
+
+
+/* ------- CONTENT -------- */
+
+
+.content img { 
+float:right; 
+width:234px;
+padding:15px 0px 15px 15px;
+}
+#content {
+  width: 905px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+#content h4 {
+  color: #82A3D5;
+  position: relative;
+  line-height: 0px;
+  top: 10px;
+}
+
+#content h2 {
+  text-transform: uppercase;
+  font-family: avenir-heavy, 'Open Sans', sans-serif;
+}
+
+#content a:link {
+  text-decoration: underline;
+  color: #F7817A;
+}
+
+#content a:visited {
+  text-decoration: underline;
+  color: #F7817A;
+}
+
+#content a:active {
+  text-decoration: underline;
+  color: #F7817A;
+}
+
+.austinmap {
+  float: right;
+  width: 37%;
+  height: 400px;
+  background-image: url(../photos/mapf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+
+.ui.accordion p {
+  position: relative;
+  left: 90px;
+}
+
+.title {
+  position: relative;
+  left: 40px;
+}
+
+
+/* ------- CALENDAR -------- */
+
+.calendar1 img {
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.calendar2 img {
+  width: 100%;
+}
+
+.dates {
+  width: 100%;
+  background-color: #EAF2FF;
+  margin: 0;
+}
+
+.dates img {
+  width: 650px;
+  padding: 10px 0px;
+}
+
+.dates h3 {
+  font-family: avenir-heavy, 'Open Sans', sans-serif;
+  font-size: 40px;
+  text-align: center;
+  position: relative;
+  top: 30px;
+}
+
+
+/* -------  Benefits page  -------- */
+
+.headercontainer3 {
+  width: 910px;
+  margin: 0 auto;
+  position: relative;
+  top: 140px;
+}
+
+.headertextarea3 {
+  width: 620px;
+  font-family: avenir-heavy, 'Open Sans', sans-serif;
+  font-size: 54px;
+  color: #fff;
+}
+
+#content h3 {
+  font-size: 32px;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  letter-spacing: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #f5827d;
+}
+
+#content p {
+  position: relative;
+  bottom: 15px;
+}
+
+.imagefill {
+  width: 100%;
+  height: 300px;
+  background-color: #eee;
+  position: relative;
+  bottom: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+/* -------  ABOUT TABS  -------- */
+
+
+
+#abouttabs {
+  margin: 90px 20px 20px 20px;
+  min-width:300px;
+}
+
+div.tab {
+    overflow: hidden;
+    background-color: #fff;
+    text-align:center;
+    font-family: avenir-heavy, 'Open Sans', sans-serif;
+}
+
+div.tab button {
+    background-color: white;
+    border: none;
+    border-bottom: 3px solid lightgrey;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color:#adadad;
+    font-family:Avenir-book, 'Open Sans', sans-serif;
+    border-radius: 0;
+}
+
+div.tab button:hover {
+    background-color: #efefef;
+}
+
+div.tab button.active {
+    background-color: #fff;
+    border-bottom: 3px solid #F7817A;
+    color:#000;
+}
+
+.tabcontent {
+    display: none;
+    padding: 30px;
+    max-width:800px;
+      display:block;
+  margin:0 auto;
+}
+
+.tabcontent h2 {
+    margin-top: 14px;
+    color:#f7817a;
+}
+
+
+.tabcontent img {
+  float:right;
+  padding: 10px 0px 10px 30px;
+  width:211px;
+}
+
+#BoardMembers.tabcontent img {
+  width:62%;
+}
+
+img.kathrynjpg {
+  width:100%;
+}
+
+p {
+  font-family: Avenir-light, 'Open Sans', sans-serif;
+  font-size: 19px;
+}
+
+
+
+
+
+
+
+/* -------  TAGS  -------- */
+
+#hometag {
+  position: relative;
+  top: 10px;
+}
+
+#volunteertag {
+  position: relative;
+  top: 120px;
+}
+
+#contacttag {
+  position: relative;
+  bottom: 0px;
+}
+
+.section2phone {
+  display: none;
+}
+
+
+
+/* -------  FOOTER  -------- */
+
+footer {
+  width: 100%;
+  background: #4b4646;
+  color:white;
+  position: relative;
+}
+
+footer p {
+    color:#b5b5b5;
+    margin: 0;
+    font-size: 13px;
+    line-height: 23px;
+    padding-top: 4px;
+}
+
+footer ul li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0px 30px;;
+  margin: 0;
+}
+
+footer ul {
+  margin: 0;
+}
+
+footer img {
+  width: 155px;
+}
+
+footer a:link, footer a:visited {
+  color:#b5b5b5;
+  font-size: 13px;
+}
+
+footer a:hover {
+  color: cornflowerblue;
+}
+
+
+.footerwrap {
+  width: 933px;
+  margin: 0 auto;
+  padding: 70px 0px 0px 0px;
+  position: relative;
+  right: 10px;
+}
+
+.credit {
+  font-size: 12px;
+  text-align:center;
+  color:#b5b5b5;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.credit img {
+  display:none;
+}
+
+.footerwrap big a {
+    font-size: 23px;
+    letter-spacing: 8px;
+}
+
+.footerwrap big {
+    font-size:24px;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+  .menu {
+    width: 800px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .menu {
+    width: 755px;
+  }
+}
+
+@media (max-width: 772px) {
+
+ main#panel {
+  display:block;
+}
+  #volunteer {
+    width: 70%;
+  }
+  .menu img {
+    display: none;
+  }
+  .navigation {
+    /* critical sizing and position styles */
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    list-style: none;
+    background: #111;
+  }
+  /* Navigation Menu - List items */
+  .nav-item {
+    width: 200px;
+    z-index: 0;
+  }
+  .container {
+    position: fixed;
+  }
+  .nav-item a {
+    display: block;
+    padding: .9em;
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .nav-item a:hover {
+    color: cornflowerblue;
+  }
+  /* Site Wrapper - Everything that isn't navigation */
+  .site-wrap {
+    /* Critical position and size styles */
+    background-color: white;
+    /* Needs a background or else the nav will show through */
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: -webkit-fill-available;
+  }
+  .nav-trigger {
+    /* critical styles - hide the checkbox input */
+    position: fixed;
+    clip: rect(0, 0, 0, 0);
+  }
+  label[for="nav-trigger"] {
+    /* critical positioning styles */
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 4;
+    /* non-critical apperance styles */
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    background-image: url('../photos/hamburger4.png');
+    background-size: cover;
+  }
+  /* Make the Magic Happen */
+  .nav-trigger+label, .site-wrap {
+    transition: left 0.2s;
+  }
+  .nav-trigger:checked+label {
+    left: 138px;
+  }
+  .nav-trigger:checked~.site-wrap {
+    left: 132px;
+    transition: left 1s;
+  }
+  .container li:last-child a {
+    font-size: 11px;
+    width: 130px;
+    font-style: italic;
+    line-height: 13px;
+    border-bottom: none;
+    position: relative;
+    color: cornflowerblue;
+  }
+  /* Micro reset */
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .menu {
+    width: 350px;
+  }
+  .menu1 {
+    display: none;
+  }
+  .menu2 ul li {
+    display:none;
+  }
+  .menuphone {
+    display: inline-block;
+    height: 60px;
+  }
+  .menuphone h2 {
+    font-size: 17px;
+        position: relative;
+        bottom: -20px;
+  }
+  .menuphone img {
+    height: 20px;
+    position: relative;
+    top:18px;
+    left:70px;
+  }
+  #menubar {
+    box-shadow: none;
+  }
+
+  .section2phone {
+    display: block;
+  }
+  .section2 {
+    display: none;
+  }
+  #volunteertag {
+    top: 500px;
+  }
+  .menu {
+    width: 400px;
+  }
+  .menu1 {
+    display: none;
+  }
+  .menu2 ul li {
+    padding: 0px 10px 0px 10px;
+    float: none;
+  }
+  .menuphone {
+    display: none;
+  }
+  .menu2 {
+    display: none;
+  }
+  .menu2phone {
+    display: block;
+    margin: 0 auto;
+  }
+  .menu2phone ul li {
+    padding: 0px 0px 0px 30px;
+    display: inline-block;
+    font-family: Avenir-book, 'Open Sans', sans-serif;
+    font-size: 15px;
+    float: right;
+    color: #383838;
+    margin: 0 auto;
+    padding: 0px 10px 0px 10px;
+    float: none;
+  }
+  .menu2 {
+    margin: 0 auto;
+  }
+  .menuphone {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+  }
+  .menuphone img {
+    height: 25px;
+    padding-right: 8px;
+    position: relative;
+    top: 5px;
+    padding-left: 0px;
+  }
+
+
+.content img {
+  width:185px;
+}
+
+footer ul {
+  display:none;
+}
+.footerwrap {
+  width:100%;
+  padding:0px;
+  padding-bottom: 20px;
+  right:0;
+}
+.credit {
+  width: 209px;
+  margin: 0 auto;
+}
+
+footer {
+  height:320px;
+  padding-top:30px;
+  z-index:4
+}
+.credit img {
+  display:block;
+  margin:0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  right:8px;
+}
+
+
+  }
+
+
+
+@media (max-width: 650px) {
+
+.tabcontent img {
+  float: none;
+  padding:20px 0px;
+  margin:0 auto;
+  display: block;
+}
+
+#BoardMembers.tabcontent img {
+  width:100%;
+}
+
+}
+
+@media (max-width: 576px) {
+
+
+  .content img { 
+display:block;
+width:100%;
+padding:23px 0px;
+}
+
+.tabcontent img {
+ width:99%;
+}
+
+}
+
+
+@media (max-width: 458px) {
+  #slider {
+    margin:44px 0px 0px 4px;
+  }
+
+#abouttabs {
+  margin:90px 0px 0px 0px;
+}
+
+  }
+
+
+@media (max-width: 350px) {
+  div.tab button {
+    font-size:14px;
+  }
+
+
+  * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}
+
+
