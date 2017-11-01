@@ -1340,6 +1340,9 @@ img.contactjpg {
   #volunteer {
     width: 74%;
   }
+  #volunteer h2 {
+    font-size:2.4em;
+  }
     .headercontainer {
     width: 100%;
     margin: 0 auto;
