@@ -624,7 +624,7 @@ footer a:hover {
 }
 
 .ac-container input:checked~article.ac-medium {
-  height: 660px;
+  height: 710px;
 }
 
 .ac-container input:checked~article.ac-large {
