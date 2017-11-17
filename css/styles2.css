@@ -1,1124 +1,373 @@
-/*
 
-benefits page
-austin/houston pages
-
-*/
-
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 body {
   width: 100%;
   margin: 0 auto;
   text-decoration: none;
   font-family: Avenir-book, 'Open Sans', sans-serif;
-  list-style-type: none;
-  overflow-x: hidden;
+  background-color:#ffb57f;
 }
 
 a:link {
   text-decoration: none;
-  color: #383838;
+  color: #232325;
 }
 
+
 a:visited {
-  color: #383838;
+  color: #232325;
 }
 
 a:hover {
-  color: #383838;
+  color: #232325;
 }
 
 a:active {
-  color: #383838;
+  color: #232325;
 }
 
 
 
+/* ++++++++++++++++ NAVIGATION +++++++++++++++ */
 
-
-
-
-
-#menu {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow-x: hidden;
-    transition: 0.5s;
+#nav {
+  background-color:#ffb57f;
+  position:fixed;
+  width:100%;
+   z-index:10;
 }
 
-
-
-
-
-button.toggle-button {
-    color: black;
-    font-size: 33px;
-    border: none;
-    background: transparent;
-    margin: 6px 17px;
-    outline: none !important;
-}
-
- main#panel {
-  display:none;
-  z-index:1000000;
-}
-
-.menuphone a h2 {
-    position: absolute;
-    bottom: 18px;
-}
-
-nav#menu ul {
-  margin: 30px 0px 0px 40px;
-  font-size: 18px;
-}
-
-nav#menu ul li {
-    list-style-type:none;
-    padding-bottom: 31px;
-}
-
-nav#menu i.fa {
-    margin-right: 13px;
-}
-small.currently {
-  position: relative;
-  left: 37px;
-  font-size: 12px;
-  bottom: 7px;
-}
-
-
-
-
-
-/* ------- NAV BAR -------- */
-
-#menubar {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  z-index: 99999;
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.03), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: Avenir-Heavy, 'Open Sans', sans-serif;
-  font-size: 17px;
-  color: #383838;
-}
-
-.menu {
-  width: 1000px;
-  margin: 0 auto;
-}
-
-.menu2 ul li {
-  padding: 0px 0px 0px 30px;
+#nav ul li {
   display: inline-block;
-  font-family: Avenir-book, 'Open Sans', sans-serif;
-  font-size: 15px;
-  float: right;
-  color: #383838;
-}
-
-.menu2 {
-  position: relative;
-  right: 30px;
-}
-
-.menu1 ul li {
-  float: left;
-  padding: 0px;
-  display: inline-block;
-  position: relative;
-  bottom: 10px;
-  font-size: 18px;
-  color: #383838;
-}
-
-.menu1 img {
-  height: 25px;
-  padding-right: 8px;
-  position: relative;
-  top: 5px;
-  padding-left: 0px;
-}
-
-.topdonatebutton {
-  background: #F7817A;
-  border-radius: 100px;
-  font-family: Avenir-book, 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: #FFFFFF;
-  padding: 6px 12px 6px 12px;
-  position: relative;
-  bottom: 7px;
-  right: 3px;
-}
-
-
-
-ul.container, .menuphone {
-  display:none;
-}
-
-
-
-
-
-/* ------- HEADER -------- */
-
-#header {
-  width: 100%;
-  height: 144px;
-  background: #DAE2F8;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #D6A4A4, #DAE2F8);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #D6A4A4, #DAE2F8);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.headercontainer {
-  width: 910px;
-  margin: 0 auto;
-  position: relative;
-  top: 68px;
-}
-
-.headertextarea {
-  font-family: avenir-heavy, 'Open Sans', sans-serif;
-  font-size: 50px;
-  color: white;
-  position: relative;
-}
-
-
-/* ------- CONTENT -------- */
-
-#content {
-  width: 905px;
-  margin: 0 auto;
-  margin-top: 40px;
-}
-
-#content h4 {
-  color: #82A3D5;
-  position: relative;
-  line-height: 0px;
-  top: 10px;
-}
-
-#content h2 {
-  text-transform: uppercase;
-  font-family: avenir-heavy, 'Open Sans', sans-serif;
-  color: #d6acae;
-  font-size: 39px;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-}
-
-#content a:link {
-  text-decoration: underline;
-  color: #F7817A;
-}
-
-#content a:visited {
-  text-decoration: underline;
-  color: #F7817A;
-}
-
-#content a:active {
-  text-decoration: underline;
-  color: #F7817A;
-}
-
-.austinmap {
-  width: 43%;
-  height: 611px;
-  background-image: url(../photos/austinmap.png);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  left: 57%;
-  top: 141px;
-  z-index: -1;
-}
-
-.houstonmap {
-  width: 43%;
-  height: 611px;
-  background-image: url(../photos/houstonmap.png);
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  left: 57%;
-  top: 141px;
-  z-index: -1;
-}
-
-.cphone {
-  display: none;
-}
-
-.ui.accordion p {
-  position: relative;
-  left: 90px;
-}
-
-.title {
-  position: relative;
-  left: 40px;
-}
-
-article.ac-extralarge ul li {
-    line-height: 27px;
-}
-
-article.ac-extralarge ul li ul li{
-    margin-left:20px;
-}
-
-
-/* ------- CALENDAR -------- */
-
-.calendar1 img {
-    width: 101%;
-    position: relative;
-    top: 44px;
-}
-
-.calendar2 img {
-  width: 100%;
-}
-
-.dates {
-  width: 100%;
-  background-color: #d6acae;
-  margin: 0;
-}
-
-.dates img {
-  width: 650px;
-  padding: 10px 0px;
-}
-
-.dates h2 {
-  font-family: avenir-heavy, 'Open Sans', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  position: relative;
-  top: 30px;
-  color:white;
-}
-
-.calendarsquare {
-    width: 134px;
-    background-color: white;
-    height: 134px;
-    position:relative;
-    display: inline-block;
-    margin: 17px;
-    top:13px;
-    -webkit-box-shadow: 0px 7px 13px -4px rgba(0,0,0,0.51);
-    -moz-box-shadow: 0px 7px 13px -4px rgba(0,0,0,0.51);
-    box-shadow: 0px 7px 13px -4px rgba(0,0,0,0.51);
-    font-family: avenir-light, 'Open Sans', sans-serif;
-}
-
-.calendarsquare .caltop {
-    background: #f7817a;
-    height: 42px;
-    position: relative;
-    bottom: 25px;
-}
-
-.calendarsquare .caltop h3 {
-    font-size: 24px;
-    position: relative;
-    top: 6px;
-    color: #fff;
-}
-
-.calendarsquare h1 {
-    font-size: 76px;
-    position: relative;
-    bottom: 80px;
-    letter-spacing: -1px;
-    right: 3px;
-    font-weight: 300;
-}
-
-.dates center {
-    background: #d6acae;
-    height: 210px;
-}
-
-
-/* ------- FOOTER -------- */
-
-#footer {
-  width: 905px;
-  margin: 0 auto;
-  position: relative;
-  top: 50px;
-}
-
-.footerleft {
-  position: relative;
-  bottom: 93px;
-}
-
-.footerleft a:link {
-  color: #F7817A;
-}
-
-#footer2 {
-  background-color: #F2F2F2;
-  height: 60px;
-}
-
-.footerright {
-  width: 905px;
-  margin: 0 auto;
-}
-
-.footerright ul li {
-  float: right;
-  padding: 0px 0px 0px 30px;
-  display: inline-block;
-  position: relative;
-  top: 20px;
-}
-
-.hoursbutton {
-  background: #FFFFFF;
-  border: 3px solid #82A3D5;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-  border-radius: 100px;
-  font-family: Avenir-roman, 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: #82A3D5;
-  position: relative;
-  bottom: 10px;
-  padding: 6px 20px;
-}
-
-.hoursbuttonphone {
-  background: #FFFFFF;
-  border: 3px solid #82A3D5;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
-  border-radius: 100px;
-  font-family: Avenir-roman, 'Open Sans', sans-serif;
-  font-size: 15px;
-  color: #82A3D5;
-  position: relative;
-  bottom: 10px;
-  padding: 15px;
-  display: none;
-  width: 90px;
-}
-
-/* -------  FOOTER  -------- */
-
-footer {
-  width: 100%;
-  background: #4b4646;
-  color:white;
-}
-
-footer p {
-    color:#b5b5b5;
-    margin: 0;
-    font-size: 13px;
-    line-height: 23px;
-    padding-top: 4px;
-}
-
-footer ul li {
-  display: inline-block;
-  vertical-align: top;
-  padding: 0px 30px;;
-  margin: 0;
-}
-
-footer ul {
-  margin: 0;
-}
-
-footer img {
-  width: 155px;
-}
-
-footer a:link, footer a:visited {
-  color:#b5b5b5;
-  font-size: 13px;
-}
-
-footer a:hover {
-  color: cornflowerblue;
-}
-
-
-.footerwrap {
-  width: 933px;
-  margin: 0 auto;
-  padding: 70px 0px 0px 0px;
-  position: relative;
-  right: 10px;
-}
-
-.credit {
-  font-size: 12px;
-  text-align:center;
-  color:#b5b5b5;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-.credit img {
-  display:none;
-}
-
-.footerwrap big a {
-    font-size: 23px;
-    letter-spacing: 8px;
-}
-
-.footerwrap big {
-    font-size:24px;
-}
-
-
-
-
-
-
-
-/* -------  Benefits page  -------- */
-
-.headercontainer3 {
-  width: 910px;
-  margin: 0 auto;
-  position: relative;
-  top: 63px;
-}
-
-.headertextarea3 {
-  width: 620px;
-  font-family: avenir-heavy, 'Open Sans', sans-serif;
-  font-size: 54px;
-  color: #fff;
-}
-
-#content h3 {
-  font-size: 20px;
-  font-family: 'Raleway', sans-serif;
-  color: grey;
-  letter-spacing: 3px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #f5827d;
-}
-
-#content.ben-content img {
+  text-decoration: none;
   float:right;
-  height:300px;
-  padding-left: 108px;
+  color:white;
+  margin: 0 37px 15px 20px;
 }
 
-#content p {
-  position: relative;
-  bottom: 15px;
-
+#nav ul a li.home {
+    float: left;
+    margin-left: 0px;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1;
+    position: absolute;
 }
 
-.vinfo2 {
-  display: none;
-}
-
-.listphone {
-  display: none;
-}
-
-.ac-container {
-  width: 500px;
-}
-
-.ac-container label {
-  padding: 5px 20px;
-  position: relative;
-  z-index: 20;
-  display: block;
-  height: 30px;
-  cursor: pointer;
-  line-height: 33px;
-  margin-bottom: 4px;
-  background: #d6acae;
-  color: white;
-  font-size:18px;
-}
-
-.ac-container label:hover {
-  background: #dcb7b8;
-}
-
-.ac-container input:checked+label, .ac-container input:checked+label:hover {
-  background: #d6acae;
-}
-
-
-.ac-container label:after, .ac-container input:checked+label:hover:after {
-  content: '';
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 13px;
-  top: 7px;
-  background: transparent url(../photos/down.png) no-repeat center center;
-}
-
-.ac-container input:checked+label:hover:after {
-  background-image: url(../photos/up.png);
-}
-
-.ac-container input {
-  display: none;
-}
-
-.ac-container article {
-  background: rgba(255, 255, 255, 0.5);
-  margin-top: -1px;
-  overflow: hidden;
-  height: 0px;
-  position: relative;
-  z-index: 10;
-  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
-}
-
-.ac-container input:checked~article {
-  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
-  position:relative;
-  bottom:1px;
-  left:1px;
-}
-
-.ac-container article {
-  color: #777;
-  font-size: 14px;}
-
-.ac-container article p {
-  padding: 20px;
-  line-height: 23px;
-}
-
-.ac-container input:checked~article.ac-small {
-  height: 203px;
-}
-
-.ac-container input:checked~article.ac-medium {
-  height: 710px;
-}
-
-.ac-container input:checked~article.ac-large {
-  height: 184px;
-}
-
-.ac-container input:checked~article.ac-extralarge {
-  height: 860px;
-}
-
-.section2phone {
-  display: none;
-}
-
-
-
-/* -------  Media page  -------- */
-
-
-
-.fancybox-thumbs {
-    top: auto;
-    width: auto;
-    bottom: 0;
-    left: 0;
-    right : 0;
-    height: 95px;
-    padding: 10px;
-    box-sizing: border-box;
-    background: rgba(0, 0, 0, 0.3);
-  }
-  
-  .fancybox-show-thumbs .fancybox-inner {
-    right: 0;
-    bottom: 95px;
+#nav ul a li.about, #nav ul a li.work:hover  {
+border-bottom: 1.5px solid white;
   }
 
-#content img {
-  height:230px;
+
+
+
+
+/* ++++++++++++++++ About me PANEL +++++++++++++++ */
+
+.name {
+  width:100%;
+  background-color:white;
+  padding: 60px 0px 80px;
 }
 
-#content.mediacontent {
-  padding-bottom:50px;
+.name .width-wrapper h1 {
+  font-size:4.8em;
+  font-weight:bold;
+  line-height: 1.2em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* -------  media queries  -------- */
-
-@media only screen and (max-width: 1000px) {
-  .menu {
-    width: 800px;
-  }
-  .headertextarea {
-    text-align:center;
-    font-size:42px;
-  }
-  #content {
-    width:781px;
-  }
-  .austinmap {
-    background-position:10%;
-  }
-  .houstonmap {
-    background-position:25%;
-    left:67%;
-    width:33%;
-  }
-
-  #content.ben-content img {
-      padding-left: 58px;
-    padding-bottom: 49px;
+.name .width-wrapper h2 {
+  margin-top:20px;
+  font-size:2.2em;
+  text-align:center;
+  color: #ffb57f;
 }
 
+.name .width-wrapper h3 {
+  font-size:1em;
+  text-transform:uppercase;
 }
 
-@media only screen and (max-width: 847px) {
-
-  #menubar {
-    box-shadow: none;
-    width:100%;
-  }
- main#panel {
+img {
+  width:200px;
+  margin:0 auto;
   display:block;
 }
-  .houstonmap {
-  display:none;
-  }
-  #volunteer {
-    width: 70%;
-  }
-  .menu img {
-    display: none;
-  }
-  .navigation {
-    /* critical sizing and position styles */
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -2;
-    list-style: none;
-    background: #111;
-  }
-  /* Navigation Menu - List items */
-  .nav-item {
-    width: 200px;
-    z-index: 0;
-  }
-  .container {
-    position: fixed;
-  }
-  .nav-item a {
-    display: block;
-    padding: .9em;
-    color: black;
-    font-size: 1.2em;
-    text-decoration: none;
-    border-bottom: 1px solid #eaeaea;
-  }
-  .nav-item a:hover {
-    color: cornflowerblue;
-  }
-  /* Site Wrapper - Everything that isn't navigation */
-  .site-wrap {
-    /* Critical position and size styles */
-    background-color: white;
-    /* Needs a background or else the nav will show through */
-    position: relative;
-    z-index: 2;
-    width: 100%;
-  }
-  .nav-trigger {
-    /* critical styles - hide the checkbox input */
-    position: fixed;
-    clip: rect(0, 0, 0, 0);
-  }
-  label[for="nav-trigger"] {
-    /* critical positioning styles */
-    position: fixed;
-    left: 15px;
-    top: 15px;
-    z-index: 4;
-    /* non-critical apperance styles */
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-    background-image: url('../photos/hamburger4.png');
-    background-size: cover;
-  }
-  /* Make the Magic Happen */
-  .nav-trigger+label, .site-wrap {
-    transition: left 0.2s;
-  }
-  .nav-trigger:checked+label {
-    left: 138px;
-  }
-  .nav-trigger:checked~.site-wrap {
-    left: 132px;
-    transition: left 1s;
-  }
-  .container li:last-child a {
-    font-size: 11px;
-    width: 130px;
-    font-style: italic;
-    line-height: 13px;
-    border-bottom: none;
-    position: relative;
-    top: 100px;
-    color: cornflowerblue;
-  }
-  /* Micro reset */
-  *, *:before, *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  .menu1 {
-    display: none;
-  }
 
-  .menuphone {
-    display: none;
-  }
-  .menu2 {
-    display: none;
-  }
-  .menu2phone {
-    display: block;
-    margin: 0 auto;
-  }
-  .menu {
+.width-wrapper {
+  width:90%;
+  max-width:715px;
+  margin:0 auto;
+  display: block;
+  padding-top:70px;
+}
 
-  }
-  .menuphone {
-    display: inline-block;
-    height: 60px;
-  }
-  .menuphone h2 {
-    font-size: 17px;
-        position: relative;
-        left: 104px;
-        bottom: -20px;
-  }
-  .menuphone img {
-    height: 20px;
-    position: relative;
-    top:18px;
-    left:70px;
-  }
-  #content {
-    background: white;
-    padding-bottom: 57px;
-    width:500px;
-    margin-top:36px;
-  }
-  .ac-container label {
-    height: 41px;
-  }
-  .houstonmap {
-    background-position: 25%;
-    left: -1%;
-    width: 102%;
-    position: absolute;
-    top: 600px;
-  }
-    #content h3 {
-      font-size: 20px;
-    }
-    #content h1 {
-      font-size: 25px;
-    }
-    #content p {
-      bottom:-27px;
-      line-height: 27px;
-    }
+ul.mylinks li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right:20px;
+  color:#ed6464;
+}
 
-    #content.ben-content img {
-          float: none;
-    padding: unset;
+ul.mylinks {
+  padding-left: 0px;
+  position:relative;
+  bottom:52px;
+  margin-top: 0px;
+}
+
+ul.mylinks a li:hover {
+  border-bottom: 1.5px solid #ed6464;
+}
+
+ul.resumelinkedin li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right:20px;
+  color: #ffb57f;
+  border: 1.5px solid #ffb57f;
+      padding: 10px 20px;
+    border-radius: 25px;
+}
+
+ul.resumelinkedin {
+  padding-left: 0px;
+  position:relative;
+  bottom:52px;
+  margin-top: 10px;
+}
+
+ul.resumelinkedin a li:hover {
+  background: #ffb57f;
+  color: white;
+}
+
+.resumelinkedin-holder {
+      width: 247px;
     margin: 0 auto;
     display: block;
-    padding-bottom: 50px;
-    width:98%;
-    height:unset;
-    }
-
-    #footer2 {
-      display: none;
-    }
-    .hoursbuttonphone {
-      display: block;
-      padding: 15px;
-      margin: 0 auto;
-    }
-    body .austinmap {
-    display:none;
-    }
-    .headercontainer {
-      text-align: left;
-    width: 100%;
-    top: 84px;
-    }
-    .headertextarea {
-      font-size:29px;
-    }
-    .calendar1, .calendar2 {
-      display:none;
-    }
-    .calendarsquare .caltop {
-      bottom: 0px;
-    }
-    .calendarsquare h1 {
-      bottom: 6px;
-    }
-    .dates h2 {
-      padding: 0 0 32px;
-      margin:0 auto;
-    }
-    .footerleft {
-      position: relative;
-      bottom: 51px;
-      margin: 39px;
-      width: 266px;
-      }
-
-      .credit img {
-        display:block;
-        margin:0 auto;
-        margin-bottom: 20px;
-        position: relative;
-        right:8px;
-      }
-
-      footer ul {
-        display:none;
-      }
-      .footerwrap {
-        width:100%;
-        padding:0px;
-        padding-bottom: 20px;
-        right:0;
-      }
-      .credit {
-        width: 209px;
-        margin: 0 auto;
-      }
-
-      footer {
-        height:320px;
-        width:100%;
-        padding-top:29px;
-
-    }
-    article.ac-extralarge {
-    padding-left: 32px;
-    line-height: 22px;
-    }
-
-    .ac-container input:checked~article.ac-extralarge, .ac-container input:checked~article.ac-medium, .ac-container input:checked~article.ac-small, .ac-container input:checked~article.ac-large {
-  height:inherit;
-  padding-bottom: 10px;
-}
-
-.ac-extralarge ul:first-child {
-    padding-top: 24px;
-}
-#content .ac-container p {
-    bottom:-9px;
-}
-
-.headertextarea3 {
-    font-size: 35px;
     position: relative;
-    text-align:center;
-    top: 17px;
-    width:100%;
-    }
-
-.headercontainer3 {
-    width:90%;
-    margin:0 auto;
-}
-
-#content p {
-    bottom: 0px;
-    padding: 15px 0px 20px;
-}
-
-.imagefill, .imagefill2, .imagefill3 {
-    margin-bottom: 51px;
-}
-
-}
-
-@media only screen and (max-width: 700px) {
-
-  .dates center {
-    width:100%;
-    max-width: 400px;
-    height: inherit;
-    padding-bottom: 36px;
-    margin:0 auto;
-}
-
-  .dates h2 {
-    width:400px;
-  }
-
-  #footer {
-    width:100%;
-  }
-
+    left: 13px;
+    padding-top: 20px;
 }
 
 
 
-@media only screen and (max-width: 520px) {
 
-#content {
-    width:94%;
-    min-width:290px;
-    margin-left:5%;
-}
 
-#content.ben-content {
-    width: 90%;
+
+
+.left, .right {
+  display:inline-block;
+
 }
 
-.headertextarea {
-    font-size: 23px;
-    line-height:34px;
-    padding-bottom: 10px;
-    width:220px;
-    margin: 0 auto;
+.left {
+  width:20%;
+  vertical-align: top;
+  font-weight:bold;
 }
 
-#header {
-    height:170px;
+.right {
+  width:75%;
+  margin-bottom:18px;
 }
 
-.ac-container {
-    width: 90%
+.right ul li {
+  padding-bottom:6px;
 }
 
-.ac-container label {
-    font-size:16px
-}
-.vinfo {
-    width:200px;
+.right .nobullets {
+  padding:16px 0px 16px 21px;
 }
 
-.dates h2 {
-    font-size: 23px;
-    width:250px;
+.right a:link, .right a:visited, .right a:active {
+  color:#fb8d3c;
+  text-decoration: underline;
 }
 
-.calendarsquare {
-    width: 100px;
-    background-color: white;
-    height: 100px;
+.right a:hover {
+  text-decoration: unset;
 }
 
-.dates center {
-    width:100%;
-    max-width: 400px;
-    height: inherit;
-    padding-bottom: 36px;
-}
 
-.calendarsquare h1 {
-    font-size:50px;
-    bottom:2px;
-}
 
-.calendarsquare .caltop h3 {
-    font-size:16px;
-    line-height:28px;
-}
-.calendarsquare .caltop {
-  height: 37px;
-}
-
-#content h2 {
-  line-height: 42px;
-    margin-bottom: 6px;
-}
-
-.headertextarea3 {
+.socialicons {
     font-size: 25px;
+    color:#ffb57f;
+}
+
+.socialicons i {
+  padding:10px 10px 0 0;
+}
+
+
+
+
+/* ++++++++++++++++ CASE STUDIES +++++++++++++++ */
+
+.casestudies {
+  margin:0 auto;
+  padding-top:20px;
+}
+
+.name .width-wrapper .casestudies img.casestudies-head {
+padding:unset;
+width:70%;
+}
+
+.name .width-wrapper .casestudies h1 {
+  font-size:3.8em;
+  text-align: center;
+  margin-bottom:0px;
+}
+
+.name .width-wrapper .casestudies h2 {
+  font-size:24px;
+  text-align: left;
+  margin-top:50px;
+}
+
+.name .width-wrapper .casestudies h3 {
+  font-size:15px;
+  text-align: center;
+  font-weight:100;
+}
+
+.name .width-wrapper .casestudies h5 {
+  text-align: center;
+}
+
+.name .width-wrapper .casestudies img {
+  width:100%;
+  padding:20px 0;
+}
+
+#outside {
+  padding:20px 0;
+  width: 160%;
     margin: 0 auto;
-    top: 39px;
+    display: block;
+    position: relative;
+    right: 28%;
+}
+#outside img {
+  display:inline-block;
+  width:46%;
+  margin-left:20px;
+}
+
+#problemstatement-whole {
+  padding:20px 0;
+}
+
+.name .width-wrapper .casestudies .problemstatement-left {
+  width:150px;
+  display:inline-block;
+  border-right: 2px solid grey;
+
+}
+
+.name .width-wrapper .casestudies .problemstatement-left {
+
+}
+
+.name .width-wrapper .casestudies .problemstatement-right {
+  display:inline-block;
+  width: 60%;
+  margin-left:30px;
+
+}
+
+img.wholefooter {
+  width:100%;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++ MEDIA QUERIES ++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ++++++++++ IPHONE 6 + LESS ++++++++ */
+
+@media (max-width: 420px) {
+
+    .width-wrapper {
+        width:338px;
+    }
+
+    .name .width-wrapper h1 {
+        font-size: 2.81em;
+    }
+
+    .name .width-wrapper h2 {
+        font-size: 25px;
+    }
+
+    ul.mylinks {
+        margin-top:3em;
+    }
+
+    #nav ul a li.home {
+        display: block;
+        position:relative;
+        right:25px;
+        margin: 0 auto;
+    }
+
+    #nav ul li {
+        margin: 0px 16px 20px 10px;
+    }
+
+    .cases-textbox {
+        width:330px;
+    }
+
+    .cases-textbox h1 {
+        font-size:54px;
+        line-height:60px;
+    }
+
+    a.jam .cases-textbox h1, a.chill .cases-textbox h1 {
+        padding-top:10px;
+    }
+
+    .cases-textbox h2 {
+        font-size:25px;
+    }
+
+    .left, .right {
+    display: block;
+    width: 100%;
+    font-size:17px;
+   }
+
+   .right ul {
+    padding-top:12px;
+    position:relative;
+    right:15px;
+   }
+
+   .right .nobullets {
+    padding: 16px 0px 16px 0px;
 }
 
-@media only screen and (max-width: 380px) {
-
-  .menuphone h2 {
-    left: 80px;
-  }
-
-  
 }
-
-@media only screen and (max-width: 322px) {
-
-  button.toggle-button {
-    margin: 6px 9px;
-  }
-
-  .menuphone h2 {
-    left: 61px;
-  }
-
-  }
