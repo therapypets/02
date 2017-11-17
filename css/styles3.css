@@ -401,10 +401,16 @@ img.kathrynjpg {
   width:100%;
 }
 
+p.captioning {
+  text-align:center;
+}
+
 p {
   font-family: Avenir-light, 'Open Sans', sans-serif;
   font-size: 19px;
 }
+
+
 
 
 
